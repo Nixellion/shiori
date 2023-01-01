@@ -36,6 +36,13 @@ After you've run the container in background, you can access console of the cont
 docker exec -it shiori sh
 ```
 
+On first run, if using the default SQLite database, you will also need to run the `migrate` command inside the container console:
+
+```
+docker exec -it shiori sh
+shiori migrate
+```
+
 Now you can use `shiori` like normal. If you've finished, you can stop and remove the container by running :
 
 ```
